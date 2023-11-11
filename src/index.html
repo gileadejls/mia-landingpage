@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/style.css">
-    <title>Document</title>
+    <title>Mia Landhi Photograph</title>
 </head>
-<body class="bg-back font-body">
+<body class="bg-back font-body dark:bg-third">
     <div class="cont w-screen relative">
         <!-- CABEÇALHO DA PAGINA -->
-        <header class=" w-full flex justify-between px-4 h-10 items-center fixed bg-white bottom-0 z-10 shadow-lg ">
+        <header class=" w-full flex justify-between px-4 h-14 items-center fixed bg-white bottom-0 z-10 shadow-lg dark:bg-third">
             <div class="logo">
-                <h1 class="text-sm font-semibold font-body text-center ">Mia Landhi.</h1>
+                <h1 class="text-sm font-semibold font-body text-center dark:text-primary">Mia Landhi.</h1>
             </div>
-            <nav>
-                <img src="../images/icons/categoria.png" alt="menu" class="w-5">
+            <nav class="flex gap-3">
+                <img src="../images/icons/moon.png" alt="" class="w-6 dark:hidden dar" id="moon">
+                <img src="../images/icons/sun.png" alt="" class="w-0 dark:w-5" id="sun">
+                <img src="../images/icons/categoria.png" alt="menu" class="w-5 dark:hidden">
+                <img src="../images/icons/categoria(1).png" alt="" class="w-0 dark:visible dark:w-5">
             </nav>
         </header>
 
@@ -36,10 +39,10 @@
 
             <!-- SECTION TEXTO-->
             <div class="text text-left w-full px-5 font-body">
-                <h1 class="text-3xl font-semibold mb-2">Hello, Everyone! I'm</h1>
-                <h1 class="text-3xl mb-1 font-semibold">Mia Landhi</h1>
-                <H2 class="text-lg text-secondary mb-2 font-medium">Professional photograph</H2>
-                <p class="text-sm text-secondary">doing our best to bring the moments through photos</p>
+                <h1 class="text-3xl font-semibold mb-2 dark:text-gray-300">Hello, Everyone! I'm</h1>
+                <h1 class="text-3xl mb-1 font-semibold dark:text-gray-300">Mia Landhi</h1>
+                <H2 class="text-lg text-secondary mb-2 font-medium dark:text-primary">Professional photograph</H2>
+                <p class="text-sm text-secondary dark:text-primary">doing our best to bring the moments through photos</p>
             </div>
             <div class="arrow-div pt-10 mb-36 hover:cursor-pointer flex justify-left  w-full px-4">
                 <a href="#eu">
@@ -50,15 +53,15 @@
 
         <!-- SEÇÃO 1 - SOBRE MEU TRABALHO -->
         <section class="text-center scroll-mt-10" id="eu">
-            <h1 class="text-xl font-medium">what can you expect from me</h1>
+            <h1 class="text-xl font-medium dark:text-gray-300">what can you expect from me</h1>
             <!-- BLOCO 1 -->
             <div class="bloco-1 w-full h-full">
                 <div class="bloco-1-img scale-75 hover:scale-90 transition-all 1s">
                     <img src="../images/section/mobile/img01.jpg" alt="" class="rounded-md">
                 </div>
                 <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
-                    <h2 class="text-2xl text-secondary font-medium">1º Photos with modern and creative design</h2>
-                    <p class="text-sm">In the age of visual innovation, modern photos transcend registers, becoming bold artistic expressions. Vibrant colors, innovative compositions and the use of technology redefine photography, transforming it into visual narratives that tell stories and evoke emotions. A universal language, contemporary photography is a unique visual experience.</p>
+                    <h2 class="text-2xl text-secondary font-medium dark:text-gray-300">1º Photos with modern and creative design</h2>
+                    <p class="text-sm dark:text-primary">In the age of visual innovation, modern photos transcend registers, becoming bold artistic expressions. Vibrant colors, innovative compositions and the use of technology redefine photography, transforming it into visual narratives that tell stories and evoke emotions. A universal language, contemporary photography is a unique visual experience.</p>
                 </div>
             </div>
 
@@ -68,8 +71,8 @@
                     <img src="../images/section/mobile/img2.jpg" alt="" class="rounded-md">
                 </div>
                 <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
-                    <h2 class="text-2xl text-secondary font-medium">2º the way you want</h2>
-                    <p class="text-sm">In any business, delivering the product as the customer wants is not just an obligation, it is the secret to building trust. This not only keeps customers happy but also builds a good reputation. It's the recipe for a business that grows and stands out.</p>
+                    <h2 class="text-2xl text-secondary font-medium dark:text-gray-300">2º the way you want</h2>
+                    <p class="text-sm dark:text-primary">In any business, delivering the product as the customer wants is not just an obligation, it is the secret to building trust. This not only keeps customers happy but also builds a good reputation. It's the recipe for a business that grows and stands out.</p>
                 </div>
             </div>
             
@@ -79,11 +82,13 @@
                     <img src="../images/section/mobile/img3.jpg" alt="" class="rounded-md">
                 </div>
                 <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
-                    <h2 class="text-2xl text-green-950">3º unparalleled quality</h2>
-                    <p class="text-sm">In a world full of photos, quality is the trump card. Vibrant colors, sharp details - it's not just an image, it's a vibe! Amazing photos not only tell stories, they make them jump off the screen. Investing in this footprint is investing in moments that last, like, forever.</p>
+                    <h2 class="text-2xl text-green-950 dark:text-gray-300">3º unparalleled quality</h2>
+                    <p class="text-sm dark:text-primary">In a world full of photos, quality is the trump card. Vibrant colors, sharp details - it's not just an image, it's a vibe! Amazing photos not only tell stories, they make them jump off the screen. Investing in this footprint is investing in moments that last, like, forever.</p>
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="./darkmode.js"></script>
 </body>
 </html>

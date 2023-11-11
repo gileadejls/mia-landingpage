@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'primary': '#82a677',
         'secondary': "#435d44",
-        'third': '#F2FFE9',
+        'third': '#171e15',
         'four': '#FA7070',
         'back': '#f1f4f0'
       },
@@ -16,5 +16,6 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
 
