@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
 </head>
 <body class="bg-third">
     <div class="cont w-screen">
+        <!-- CABEÇALHO DA PAGINA -->
         <header class="bg-third w-full flex justify-between px-4 pt-3 items-center">
             <div class="logo">
                 <h1 class="text-xl font-body text-center text-four ">Mia Landhi.</h1>
@@ -26,7 +27,9 @@
                 <img src="../images/menu.png" alt="">
             </nav>
         </header>
-        <section class="h-full flex w-full justify-center flex-col items-center pt-20">
+
+        <!-- HERO SECTION DA PAGINA! -->
+        <section class="h-full flex w-full justify-center flex-col items-center pt-20 ">
             <img src="../images/a_photographer_1-removebg.png" alt="" class="bg-primary rounded-full w-56 mb-10" >
             <div class="text text-center w-full px-4">
                 <h1 class="text-3xl font-medium text-secondary"> Olá, me chamo Mia!</h1>
@@ -36,6 +39,50 @@
                 <img src="../images/icons/instagram.png" alt="" class="">
                 <img src="../images/icons/linkedin.png" alt="">
                 <img src="../images/icons/whatsapp.png" alt="">
+            </div>
+            <div class="arrow-div w-20 pt-20 mb-20 hover:cursor-pointer">
+                <a href="#eu">
+                    <img src="../images/icons/arrow.gif" alt="" class="rotate-90 w-full">
+                </a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1 - SOBRE MEU TRABALHO -->
+        <section class="text-center scroll-mt-10" id="eu">
+            <h1 class="text-2xl">O que você pode esperar de mim?</h1>
+            <!-- BLOCO 1 -->
+            <div class="bloco-1 w-full">
+                <div class="bloco-1-img flex ">
+                    <img src="../images/section/mobile/img01.jpg" alt="" class="rounded-md scale-75">
+                    <img src="../images/section/mobile/img01.jpg" alt="" class="rounded-md scale-75">
+                    <img src="../images/section/mobile/img01.jpg" alt="" class="rounded-md scale-75">
+                </div>
+                <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
+                    <h2 class="text-2xl text-green-950">1º Fotos com design moderno e criativas</h2>
+                    <p class="font-light text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem numquam sit ipsum mollitia reprehenderit delectus maxime, reiciendis totam nesciunt similique ut dolore, accusamus doloribus. Sed optio exercitationem modi non.</p>
+                </div>
+            </div>
+
+            <!-- BLOCO 2-->
+            <div class="bloco-1 w-full">
+                <div class="bloco-1-img scale-75 hover:scale-90 transition-all 1s">
+                    <img src="../images/section/mobile/img2.jpg" alt="" class="rounded-md">
+                </div>
+                <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
+                    <h2 class="text-2xl text-green-950">2º Fotos editadas e revisadas</h2>
+                    <p class="font-light text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem numquam sit ipsum mollitia reprehenderit delectus maxime, reiciendis totam nesciunt similique ut dolore, accusamus doloribus. Sed optio exercitationem modi non.</p>
+                </div>
+            </div>
+            
+            <!-- BLOCO 3 -->
+            <div class="bloco-1 w-full">
+                <div class="bloco-1-img scale-75 hover:scale-90 transition-all 1s">
+                    <img src="../images/section/mobile/img3.jpg" alt="" class="rounded-md">
+                </div>
+                <div class="bloco-1-text text-center px-5 flex flex-col gap-10">
+                    <h2 class="text-2xl text-green-950">1º qualidade e garantia de satisfação do cliente</h2>
+                    <p class="font-light text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem numquam sit ipsum mollitia reprehenderit delectus maxime, reiciendis totam nesciunt similique ut dolore, accusamus doloribus. Sed optio exercitationem modi non.</p>
+                </div>
             </div>
         </section>
     </div>
