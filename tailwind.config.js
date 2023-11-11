@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#A6CF98',
-        'secondary': "#557C55",
+        'primary': '#82a677',
+        'secondary': "#435d44",
         'third': '#F2FFE9',
-        'four': '#FA7070'
+        'four': '#FA7070',
+        'back': '#f1f4f0'
       },
       fontFamily: {
-        body: ['Roboto']
+        body: ['Poppins']
       }
     },
   },
