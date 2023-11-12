@@ -1,11 +1,9 @@
-//html
 const body = document.querySelector('html')
 
 //icons
 const sun = document.querySelector('#sun')
 const moon = document.querySelector('#moon')
 const categ = document.querySelector('#category')
-
 
 
 sun.addEventListener('click', ()=>{

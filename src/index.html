@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Mia Landhi Photograph</title>
+
 </head>
 <body class="bg-back font-body dark:bg-third">
     <div class="cont w-screen relative">
 
         <!-- BACK TO TOP BUTTON -->
-        <div class="bg-primary w-8 p-2 opacity-50 rounded-xl fixed bottom-14 right-5 transition-all z-20 invisible" id="backtotop">
+        <div class="bg-primary w-8 p-2 opacity-50 rounded-xl fixed bottom-14 right-5 transition-all z-20 invisible hover:bg-secondary" id="backtotop">
             <a href="#inicio">
-                <img src="../images/icons/up-arrow(1).png" alt="" class="w-6 bg-primary">
+                <img src="../images/icons/up-arrow(1).png" alt="" class="w-6">
             </a>
         </div>
 
@@ -95,8 +100,56 @@
                 </div>
             </div>
         </section>
-    </div>
+        <section class="h-full text-center">
+            <div>
+                <h2 class="pt-28 text-xl font-semibold dark:text-gray-300">Portifolio</h2>
+                <h3 class="dark:text-primary mb-10">My recent works</h3>
+            </div>
 
-    <script src="./darkmode.js"></script>
+            <!-- SLIDER CONTAINER -->
+            <swiper-container class="mySwiper w-full h-full scale-90" navigation="true">
+                <swiper-slide class="flex flex-col items-center gap-5">
+                    <!-- div image -->
+                    <div class="w-72 h-40 relative bg-blue-400 overflow-hidden rounded-lg shadow-lg">
+                        <img src="../images/section/img2-desktop.jpg" alt="" class="bg-contain w-full">
+                    </div>
+                    <!-- div text -->
+                    <div class="mb-36 text-left px-10">
+                        <h2 class="text-xl dark:text-gray-300 font-semibold mb-2">Algum texto</h2>
+                        <p class="dark:text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, consequatur voluptatem</p>
+
+                        <!-- button -->
+                        <button class=" bg-primary px-5 py-4 rounded-lg mt-4 text-white flex gap-2">
+                            <p class="">Leia mais</p>
+                            <img src="../images/icons/seta-direita(1).png" alt="" class="scale-75 hover:translate-x-1 transition-all">
+                        </button>
+                    </div>
+                </swiper-slide>
+                <swiper-slide class="flex flex-col items-center gap-5">
+                    <div class="w-72 h-40 relative bg-blue-400 overflow-hidden rounded-lg shadow-lg">
+                        <img src="../images/section/img2-desktop.jpg" alt="" class="bg-contain w-full">
+                    </div>
+                    <div class="mb-36 text-left px-10">
+                        <h2 class="text-xl dark:text-gray-300 font-semibold mb-2">Algum texto</h2>
+                        <p class="dark:text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, consequatur voluptatem</p>
+                        <button class=" bg-primary px-4 py-2 rounded-lg mt-4 text-white">lei mais</button>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-primary text-white w-full h-full px-10 pt-10 pb-28">
+            <h1 class="text-2xl font-semibold mb-2">Mia Landhi</h1>
+            <p class="text-sm mb-4">the right person for you.</p>
+            <div class="flex gap-4 ">
+                <img src="../images//icons/instagram.png" alt="" class="scale-75">
+                <img src="../images//icons/linkedin.png" alt="" class="scale-75">
+                <img src="../images//icons/whatsapp.png" alt="" class="scale-75">
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./darkmode.js" type="module"></script>
 </body>
 </html>
