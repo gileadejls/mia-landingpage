@@ -20,7 +20,6 @@ const backtop = document.querySelector("#backtotop")
 
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 100){
-        console.log("aaaaaaa")
         backtop.classList.remove('invisible')
         backtop.classList.remove('bottom-14')
         backtop.classList.add('bottom-20')
